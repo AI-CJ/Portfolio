@@ -1,36 +1,43 @@
 ## HTML scratch
 
-Prioritize trxt with header elements:
+Prioritize text with header elements:
 	<h1>Priority 1 text</h1>
 	<h2>Priority 2 text</h2>
+
 Paragraph of text uses p element:
 	<p>Paragraph of text</p>
+
 To make a comment:
 	<!--Insert comment here!-->
+
 The main element is used to represent the main content of the body of an 
  HTML document. Helps for Engine Optimization and accessability:
-	<html>
-		<body>
-			<main>
-	      <h1>CatPhotoApp</h1>
-	      <h2>Cat Photos</h2>
-	      <!-- TODO: Add link to cat photos -->
-	      <p>Everyone loves cute cats online!</p>
-	    </main>
-		</body>
-	</html>
+  <html>
+    <body>
+      <main>
+	<h1>CatPhotoApp</h1>
+	<h2>Cat Photos</h2>
+	<!-- TODO: Add link to cat photos -->
+	<p>Everyone loves cute cats online!</p>
+      </main>
+    </body>
+  </html>
+
 NESTING is when you put the h1, h2, comment, and p elements inside the 
  main element.
+
 VOID ELEMENT is an element where it uses an opening tag but
  no closing tag:
   <IMG>
  IMG is the image element, which has no closing tag
+
 HTML ATTRIBUTES are special words used inside the opening tag of an 
- element to control the element's behavior.
+ element to control the element's behavior
   <img src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/relaxing-cat.jpg">
 
-
-
+All img elements should have an alt attribute. The alt attribute's text is used for 
+ screen readers to improve accessibility and is displayed if the image fails to load.
+  <img src="cat.jpg" alt="A cat">
 
 
 
