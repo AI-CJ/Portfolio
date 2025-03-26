@@ -63,21 +63,21 @@
 
   ### Certifications to have before I apply for jobs (in suggested order)
 - FreeCodeCamp
-  (1) -- Responsive Web Design
-  (2) -- JavaScript Algorithms and Data Structures
-  (5) -- Front End Development Libraries
-  (8) -- APIs and Microservices
-  (9) -- Relational Database Certification
-  (13) -- Python for Scientific Computing
-(4) - Harvard's CS50x: Introduction to Computer Science (https://cs50.harvard.edu/x/2025/)
-(6) - The Odin Project (https://www.theodinproject.com/)
-(10) - AWS Certified Cloud Practitioner (https://aws.amazon.com/certification/certified-cloud-practitioner/)
-(12)- Google IT Support Professional Certificate (https://www.coursera.org/professional-certificates/google-it-support)
-(7) - Meta Front-End Developer Professional Certificate (https://www.coursera.org/professional-certificates/meta-front-end-developer)
-(11) - Microsoft Certified: Azure Fundamentals (https://learn.microsoft.com/en-us/credentials/certifications/azure-fundamentals/?practice-assessment-type=certification)
-(3) - CompTIA IT Fundamentals (ITF+) (https://www.comptia.org/home)
-(15) - Udemy courses in Progress Tracking (i.e. The Complete Web Developer Bootcamp by Angela Yu)
-(14) - Kaggle Micro-Certifications for Data Science (https://www.kaggle.com/learn)
+(1) FreeCodeCamp Responsive Web Design
+(2) FreeCodeCamp JavaScript Algorithms and Data Structures
+(3) CompTIA IT Fundamentals (ITF+) (https://www.comptia.org/home)
+(4) Harvard's CS50x: Introduction to Computer Science (https://cs50.harvard.edu/x/2025/)
+(5) FreeCodeCamp Front End Development Libraries
+(6) The Odin Project (https://www.theodinproject.com/)
+(7) Meta Front-End Developer Professional Certificate (https://www.coursera.org/professional-certificates/meta-front-end-developer)
+(8) FreeCodeCamp APIs and Microservices
+(9) FreeCodeCamp Relational Database Certification
+(10) AWS Certified Cloud Practitioner (https://aws.amazon.com/certification/certified-cloud-practitioner/)
+(11) Microsoft Certified: Azure Fundamentals (https://learn.microsoft.com/en-us/credentials/certifications/azure-fundamentals/?practice-assessment-type=certification)
+(12) Google IT Support Professional Certificate (https://www.coursera.org/professional-certificates/google-it-support)
+(13) FreeCodeCamp Python for Scientific Computing
+(14) Kaggle Micro-Certifications for Data Science (https://www.kaggle.com/learn)
+(15) Udemy courses in Progress Tracking (i.e. The Complete Web Developer Bootcamp by Angela Yu)
 
  ### Always look for internships in Software Development, Web Development, and Data Science
  ### Collaborate on open-source software projects on GitHub Explore (find beginner-friendly repositories like "good first issue")
