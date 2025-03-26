@@ -61,23 +61,23 @@
 - Tailor your resume for junior software engineer roles
 
 
-  ### Certifications to have before I apply for jobs
+  ### Certifications to have before I apply for jobs (in suggested order)
 - FreeCodeCamp
-  -- Responsive Web Design
-  -- JavaScript Algorithms and Data Structures
-  -- Front End Development Libraries
-  -- Python for Scientific Computing
-  -- APIs and Microservices
-  -- Relational Database Certification
-- Harvard's CS50x: Introduction to Computer Science (https://cs50.harvard.edu/x/2025/)
-- The Odin Project (https://www.theodinproject.com/)
-- Meta Front-End Developer Professional Certificate (https://www.coursera.org/professional-certificates/meta-front-end-developer)
-- Google IT Support Professional Certificate (https://www.coursera.org/professional-certificates/google-it-support)
-- AWS Certified Cloud Practitioner (https://aws.amazon.com/certification/certified-cloud-practitioner/)
-- Microsoft Certified: Azure Fundamentals (https://learn.microsoft.com/en-us/credentials/certifications/azure-fundamentals/?practice-assessment-type=certification)
-- CompTIA IT Fundamentals (ITF+) (https://www.comptia.org/home)
-- Udemy courses in Progress Tracking (i.e. The Complete Web Developer Bootcamp by Angela Yu)
-- Kaggle Micro-Certifications for Data Science (https://www.kaggle.com/learn)
+  (1) -- Responsive Web Design
+  (2) -- JavaScript Algorithms and Data Structures
+  (5) -- Front End Development Libraries
+  (8) -- APIs and Microservices
+  (9) -- Relational Database Certification
+  (13) -- Python for Scientific Computing
+(4) - Harvard's CS50x: Introduction to Computer Science (https://cs50.harvard.edu/x/2025/)
+(6) - The Odin Project (https://www.theodinproject.com/)
+(10) - AWS Certified Cloud Practitioner (https://aws.amazon.com/certification/certified-cloud-practitioner/)
+(12)- Google IT Support Professional Certificate (https://www.coursera.org/professional-certificates/google-it-support)
+(7) - Meta Front-End Developer Professional Certificate (https://www.coursera.org/professional-certificates/meta-front-end-developer)
+(11) - Microsoft Certified: Azure Fundamentals (https://learn.microsoft.com/en-us/credentials/certifications/azure-fundamentals/?practice-assessment-type=certification)
+(3) - CompTIA IT Fundamentals (ITF+) (https://www.comptia.org/home)
+(15) - Udemy courses in Progress Tracking (i.e. The Complete Web Developer Bootcamp by Angela Yu)
+(14) - Kaggle Micro-Certifications for Data Science (https://www.kaggle.com/learn)
 
  ### Always look for internships in Software Development, Web Development, and Data Science
  ### Collaborate on open-source software projects on GitHub Explore (find beginner-friendly repositories like "good first issue")
