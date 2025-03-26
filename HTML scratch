@@ -1,0 +1,7 @@
+# HTML scratch
+
+Prioritize trxt with header elements:
+	<h1>Priority 1 text</h1>
+	<h2>Priority 2 text</h2>
+Paragraph of text uses p element:
+	<p>Paragraph of text</p>
