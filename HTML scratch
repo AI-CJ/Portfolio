@@ -21,9 +21,13 @@ The main element is used to represent the main content of the body of an
 	</html>
 NESTING is when you put the h1, h2, comment, and p elements inside the 
  main element.
-
-
-
+VOID ELEMENT is an element where it uses an opening tag but
+ no closing tag:
+  <IMG>
+ IMG is the image element, which has no closing tag
+HTML ATTRIBUTES are special words used inside the opening tag of an 
+ element to control the element's behavior.
+  <img src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/relaxing-cat.jpg">
 
 
 
