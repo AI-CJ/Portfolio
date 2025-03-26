@@ -19,3 +19,18 @@ The main element is used to represent the main content of the body of an
 	    </main>
 		</body>
 	</html>
+NESTING is when you put the h1, h2, comment, and p elements inside the 
+ main element.
+
+
+
+
+
+
+
+
+
+
+
+
+
