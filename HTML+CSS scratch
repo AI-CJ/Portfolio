@@ -29,19 +29,46 @@ NESTING is when you put the h1, h2, comment, and p elements inside the
 VOID ELEMENT is an element where it uses an opening tag but
  no closing tag:
   <IMG>
- IMG is the image element, which has no closing tag
+IMG is the image element, which has no closing tag
 
 HTML ATTRIBUTES are special words used inside the opening tag of an 
- element to control the element's behavior
+ element to control the element's behavior:
   <img src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/relaxing-cat.jpg">
-
 All img elements should have an alt attribute. The alt attribute's text is used for 
- screen readers to improve accessibility and is displayed if the image fails to load.
+ screen readers to improve accessibility and is displayed if the image fails to load:
   <img src="cat.jpg" alt="A cat">
 
+Link to another page with the anchor (a) element:
+  <a href="https://www.freecodecamp.org">click here to go to freeCodeCamp.org</a>
+You can use the target attribute on the anchor (a) element to open links in a new tab:
+  <a href="https://www.freecodecamp.org" target="_blank">freeCodeCamp</a>
+You can turn an image or other types of content into a link:
+  <a href="example-link">
+  <img src="image-link.jpg" alt="A photo of a cat.">
+  </a>
 
+The section element is used to define sections in a document, such as chapters, headers, 
+ footers, or any other sections of the document:
+  <section>
+    <h2>Section Title</h2>
+    <p>Section content...</p>
+  </section>
 
+To create an unordered list of items, you can use the <ul> element.
+The <li> element is used to create a list item in an ordered or unordered list.
+  <ul>
+    <li>milk</li>
+    <li>cheese</li>
+  </ul>
 
+The <figure> element represents self-contained content and will allow you to associate an 
+ image with a caption.
+A figure caption (figcaption) element is used to add a caption to describe the image contained 
+ within the figure element.
+  <figure>
+    <img src="image.jpg" alt="A description of the image">
+    <figcaption>A cute cat</figcaption>
+  </figure>
 
-
+To place emphasis on a specific word or phrase, you can use the <em> element.
 
