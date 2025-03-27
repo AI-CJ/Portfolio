@@ -86,6 +86,6 @@ The input element allows you several ways to collect data from a web form. Like 
 Placeholder text is used to give people a hint about what kind of information to enter into an input.
   <input type="text" name="catphotourl" placeholder="cat photo URL">
 
-
+To prevent a user from submitting your form when required information is missing, you need to add the required attribute to an input element.
 
 
