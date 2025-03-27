@@ -77,6 +77,15 @@ The strong element is used to indicate that some text is of strong importance or
 
 The <form> element is used to get information from a user like their name, email, and other details.
 
+The action attribute indicates where form data should be sent.
+  <form action="https://freecatphotoapp.com/submit-cat-photo">
+  </form>
+The input element allows you several ways to collect data from a web form. Like img elements, input 
+ elements are a void element and do not need closing tags.
+
+Placeholder text is used to give people a hint about what kind of information to enter into an input.
+  <input type="text" name="catphotourl" placeholder="cat photo URL">
+
 
 
 
