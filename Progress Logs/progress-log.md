@@ -1,11 +1,15 @@
 # Progress Tracker
 
+## March 26. 2025
+- Started Responsive Web Design on FreeCodeCamp
+  -- Completed up to step 37 in Learn HTML: Building a Cat Photo App
+  -- Began taking notes in "HTML+CSS scratch.md" file on github
+
 ## March 25, 2025
-- Enrolled in FreeCodeCamp's Python for Everybody course
 - Created project tracker file
 - Built Replit profile
 - Built Github profile
-- COMPLETED - Built basic portfolio website for myself in Replit
+- Built basic portfolio website for myself in Replit
 
 
 ### To be completed (in order):
