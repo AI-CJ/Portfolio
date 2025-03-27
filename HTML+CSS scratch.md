@@ -76,3 +76,7 @@ To place emphasis (italicize) on a specific word or phrase, you can use the <em>
 The strong element is used to indicate that some text is of strong importance or urgent (bold).
 
 The <form> element is used to get information from a user like their name, email, and other details.
+
+
+
+
