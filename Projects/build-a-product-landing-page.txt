@@ -1,0 +1,302 @@
+** start of undefined **
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Original Trombones</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Header Section -->
+  <header id="header">
+    <img id="header-img" src="https://via.placeholder.com/150" alt="Original Trombones Logo">
+    <nav id="nav-bar">
+      <a href="#features" class="nav-link">Features</a>
+      <a href="#how-it-works" class="nav-link">How It Works</a>
+      <a href="#pricing" class="nav-link">Pricing</a>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="hero">
+    <h1>Handcrafted, Home-Made Masterpieces</h1>
+    <p>Discover the finest trombones crafted with precision and care.</p>
+    <a href="#pricing" class="cta-btn">Shop Now</a>
+  </section>
+
+  <!-- Features Section -->
+  <section id="features">
+    <h2>Features</h2>
+    <div class="feature">
+      <h3>Premium Materials</h3>
+      <p>Our trombones use the shiniest brass sourced locally to ensure durability.</p>
+    </div>
+    <div class="feature">
+      <h3>Fast Shipping</h3>
+      <p>Receive your trombone as soon as it's crafted. Free returns if unsatisfied.</p>
+    </div>
+    <div class="feature">
+      <h3>Quality Assurance</h3>
+      <p>Every trombone is tested for quality, pitch, and durability.</p>
+    </div>
+  </section>
+
+  <!-- How It Works Section -->
+  <section id="how-it-works">
+    <h2>How It Works</h2>
+    <video id="video" controls>
+      <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+  </section>
+
+  <!-- Pricing Section -->
+  <section id="pricing">
+    <h2>Pricing</h2>
+    <div class="pricing-card">
+      <h3>Tenor Trombone</h3>
+      <p>$600</p>
+      <ul>
+        <li>Lorem ipsum</li>
+        <li>Lorem ipsum</li>
+        <li>Lorem ipsum dolor</li>
+      </ul>
+      <button>Select</button>
+    </div>
+    <div class="pricing-card">
+      <h3>Bass Trombone</h3>
+      <p>$900</p>
+      <ul>
+        <li>Lorem ipsum</li>
+        <li>Lorem ipsum</li>
+        <li>Lorem ipsum dolor</li>
+      </ul>
+      <button>Select</button>
+    </div>
+    <div class="pricing-card">
+      <h3>Valve Trombone</h3>
+      <p>$1200</p>
+      <ul>
+        <li>Plays similar to a Trumpet</li>
+        <li>Great for Jazz Bands</li>
+        <li>Lorem ipsum dolor</li>
+      </ul>
+      <button>Select</button>
+    </div>
+  </section>
+
+  <!-- Sign-Up Form -->
+  <section id="signup">
+    <h2>Sign Up for Updates</h2>
+    <form id="form" action="https://www.freecodecamp.com/email-submit" method="post">
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" placeholder="Enter your email" required>
+      <input type="submit" id="submit" value="Submit">
+    </form>
+  </section>
+
+  <!-- Footer Section -->
+  <footer id="footer">
+    <ul>
+      <li><a href="#privacy">Privacy</a></li>
+      <li><a href="#terms">Terms</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <p>&copy; 2016, Original Trombones</p>
+  </footer>
+</body>
+</html>
+
+** end of undefined **
+
+** start of undefined **
+
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Header Styles */
+#header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #2c3e50;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  z-index: 1000;
+}
+
+#header-img {
+  height: 50px;
+}
+
+#nav-bar {
+  display: flex;
+  gap: 15px;
+}
+
+.nav-link {
+  color: white;
+  text-decoration: none;
+  padding: 5px 10px;
+}
+
+.nav-link:hover {
+  background-color: #34495e;
+  border-radius: 5px;
+}
+
+/* Hero Section */
+#hero {
+  text-align: center;
+  padding: 100px 20px 50px;
+  background: #ecf0f1;
+  color: #2c3e50;
+}
+
+.cta-btn {
+  display: inline-block;
+  background-color: #e74c3c;
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+
+.cta-btn:hover {
+  background-color: #c0392b;
+}
+
+/* Features Section */
+#features {
+  padding: 50px 20px;
+  text-align: center;
+  background: #f4f4f4;
+}
+
+.feature {
+  margin-bottom: 20px;
+}
+
+/* How It Works Section */
+#how-it-works {
+  padding: 50px 20px;
+  text-align: center;
+}
+
+#video {
+  max-width: 100%;
+  height: auto;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Pricing Section */
+#pricing {
+  padding: 50px 20px;
+  background: #ecf0f1;
+  text-align: center;
+}
+
+.pricing-card {
+  background: white;
+  margin: 20px auto;
+  padding: 20px;
+  max-width: 300px;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.pricing-card ul {
+  text-align: left;
+  padding-left: 20px;
+}
+
+.pricing-card button {
+  background-color: #3498db;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.pricing-card button:hover {
+  background-color: #2980b9;
+}
+
+/* Sign-Up Section */
+#signup {
+  text-align: center;
+  padding: 50px 20px;
+}
+
+#form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+#email {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+#submit {
+  background-color: #2ecc71;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#submit:hover {
+  background-color: #27ae60;
+}
+
+/* Footer Section */
+#footer {
+  background: #2c3e50;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+#footer ul {
+  list-style: none;
+  padding: 0;
+}
+
+#footer ul li {
+  display: inline;
+  margin: 0 10px;
+}
+
+/* Media Query */
+@media (max-width: 768px) {
+  #nav-bar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .pricing-card {
+    max-width: 90%;
+  }
+}
+
+** end of undefined **
+
