@@ -122,6 +122,10 @@ You can set browser behavior by adding meta elements in the head. Inside the hea
 
 ## CSS scratch
 
+Every HTML document should have a DOCTYPE declaration and html element. The DOCTYPE tells the browser which version of HTML the document is in. And the html element represents the root element which contains all other elements.
+
+
+
 
 
 
