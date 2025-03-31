@@ -1,0 +1,169 @@
+** start of undefined **
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Survey Form</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <form id="survey-form">
+    <h1 id="title">Survey Form</h1>
+    <p id="description">Thank you for taking the time to help us improve our platform!</p>
+
+    <div class="form-group">
+      <label id="name-label" for="name">Name</label>
+      <input type="text" id="name" name="name" placeholder="Enter your name" required>
+    </div>
+
+    <div class="form-group">
+      <label id="email-label" for="email">Email</label>
+      <input type="email" id="email" name="email" placeholder="Enter your email" required>
+    </div>
+
+    <div class="form-group">
+      <label id="number-label" for="number">Age (optional)</label>
+      <input type="number" id="number" name="age" placeholder="Enter your age" min="10" max="100">
+    </div>
+
+    <div class="form-group">
+      <label for="dropdown">Which option best describes your current role?</label>
+      <select id="dropdown" name="role">
+        <option value="student">Student</option>
+        <option value="full-time-job">Full Time Job</option>
+        <option value="full-time-learner">Full Time Learner</option>
+        <option value="prefer-not-to-say">Prefer not to say</option>
+        <option value="other">Other</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <label>Would you recommend freeCodeCamp to a friend?</label>
+      <div>
+        <label><input type="radio" name="recommend" value="definitely" required> Definitely</label>
+      </div>
+      <div>
+        <label><input type="radio" name="recommend" value="maybe"> Maybe</label>
+      </div>
+      <div>
+        <label><input type="radio" name="recommend" value="not-sure"> Not sure</label>
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label>What would you like to see improved? (Check all that apply)</label>
+      <div>
+        <label><input type="checkbox" name="improvement" value="front-end-projects"> Front-end Projects</label>
+      </div>
+      <div>
+        <label><input type="checkbox" name="improvement" value="back-end-projects"> Back-end Projects</label>
+      </div>
+      <div>
+        <label><input type="checkbox" name="improvement" value="data-visualization"> Data Visualization</label>
+      </div>
+      <div>
+        <label><input type="checkbox" name="improvement" value="challenges"> Challenges</label>
+      </div>
+      <div>
+        <label><input type="checkbox" name="improvement" value="videos"> Videos</label>
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label for="comments">Any comments or suggestions?</label>
+      <textarea id="comments" name="comments" placeholder="Enter your comments here..."></textarea>
+    </div>
+
+    <button id="submit" type="submit">Submit</button>
+  </form>
+</body>
+</html>
+
+** end of undefined **
+
+** start of undefined **
+
+/* General styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+#survey-form {
+  background: white;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  max-width: 600px;
+  width: 100%;
+}
+
+h1#title {
+  font-size: 2rem;
+  color: #333;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+p#description {
+  text-align: center;
+  font-size: 1rem;
+  margin-bottom: 2rem;
+  color: #555;
+}
+
+.form-group {
+  margin-bottom: 1.5rem;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  color: #333;
+}
+
+input, select, textarea {
+  width: 100%;
+  padding: 0.5rem;
+  margin-bottom: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+input[type="radio"], input[type="checkbox"] {
+  width: auto;
+  margin-right: 0.5rem;
+}
+
+textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+button#submit {
+  background: #007bff;
+  color: white;
+  font-size: 1rem;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 100%;
+}
+
+button#submit:hover {
+  background: #0056b3;
+}
+
+** end of undefined **
+
