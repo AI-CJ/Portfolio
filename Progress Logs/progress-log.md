@@ -1,5 +1,9 @@
 # Progress Tracker
 
+## March 31, 2025
+-Completed "Learn HTML: Building a Cat Photo App" in FreeCodeCamp's Responsive Web Design
+
+
 ## March 26. 2025
 - Started Responsive Web Design on FreeCodeCamp <br>
   -- Completed up to step 37 in Learn HTML: Building a Cat Photo App <br>
