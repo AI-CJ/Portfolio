@@ -86,6 +86,44 @@ The input element allows you several ways to collect data from a web form. Like 
 Placeholder text is used to give people a hint about what kind of information to enter into an input.
   <input type="text" name="catphotourl" placeholder="cat photo URL">
 
-To prevent a user from submitting your form when required information is missing, you need to add the required attribute to an input element.
+To prevent a user from submitting your form when required information is missing, you need to add the <required> attribute to an input element.
+
+The <button> element is used to create a clickable button.
+
+Even though you added your button below the text input, they appear next to each other on the page. That's because both input and button elements are inline elements, which don't appear on new lines.
+
+You can use radio buttons for questions where you want only one answer out of multiple options. To make it so selecting one radio button automatically deselects the other, both buttons must have a name attribute with the same value.
+
+label elements are used to help associate the text for an input element with the input element itself (especially for assistive technologies like screen readers).
+
+The id attribute is used to identify specific HTML elements. Each id attribute's value must be unique from all other id values for the entire page.
+
+The fieldset element is used to group related inputs and labels together in a web form. fieldset elements are block-level elements, meaning that they appear on a new line.
+
+The legend element acts as a caption for the content in the fieldset element. It gives users context about what they should enter into that part of the form.
+
+Forms commonly use checkboxes for questions that may have more than one answer. The input element with a type attribute set to checkbox creates a checkbox.
+
+Like radio buttons, form data for selected checkboxes are name / value attribute pairs. While the value attribute is optional, it's best practice to include it with any checkboxes or radio buttons on the page.
+
+In order to make a checkbox checked or radio button selected by default, you need to add the checked attribute to it.
+
+The footer element is used to define a footer for a document or section. A footer typically contains information about the author of the document, copyright data, links to terms of use, contact information, and more.
+
+The head element is used to contain metadata about the document, such as its title, links to stylesheets, and scripts. Metadata is information about the page that isn't displayed directly on the page.
+
+The title element determines what browsers show in the title bar or tab for the page.
+
+Add the lang attribute with the value en to the opening html tag to specify that the language of the page is English. 
+
+All pages should begin with <!DOCTYPE html>. This special string is known as a declaration and ensures the browser tries to meet industry-wide specifications. <!DOCTYPE html> tells browsers that the document is an HTML5 document which is the latest version of HTML.
+
+You can set browser behavior by adding meta elements in the head. Inside the head element, nest a meta element with an attribute named charset. Set to the value to utf-8 which tells the browser how to encode characters for the page.
+
+## CSS scratch
+
+
+
+
 
 
