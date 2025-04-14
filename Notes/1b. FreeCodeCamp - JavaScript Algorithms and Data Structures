@@ -1,1 +1,18 @@
 
+Declare a variable:
+  let character;
+Assign a string to a variable upon declaration:
+  let character = "Hello";
+To print character in the console:
+  console.log(character);
+
+Variable naming with multiple words:
+  manyWordVariable
+
+An Array holds a series of values.
+Arrays are declared like this:
+  let array = [];
+To access a value in the array, use the index:
+  array[0], array[1], array[2],...
+
+
