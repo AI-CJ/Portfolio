@@ -1,3 +1,4 @@
+JAVASCRIPT
 
 Declare a variable:
   let character;
@@ -14,5 +15,93 @@ Arrays are declared like this:
   let array = [];
 To access a value in the array, use the index:
   array[0], array[1], array[2],...
+To find out how many elements are in an array:
+  arrayLength = array.length;
+To access the last element in an array of unknown length:
+  array[array.length - 1];
+To add an element to the end of an array:
+  array.push(12);
+To remove the last element of an array and return the element:
+  array.pop()
+The .unshift() method of an array allows you to add a value to the beginning of the array.
+Arrays also have a .shift() method. This will remove the first element of the array.
+
+To make a variable that cannot be reassigned:
+  const character = "Hello";
+
+For loops:
+  for (iterator; condition; iteration) {
+  logic;
+  }
+    >>  The iterator is a variable you can declare specifically in your for 
+          loop to control how the loop iterates or goes through your logic.
+
+A function is a block of code that can be reused throughout your application.
+  function name(parameter) {
+  }
+
+>>>
+  if {}
+  else if {}
+  else {}
+>>>
+
+A while loop will run over and over again until the condition specified is no longer true.
+  while (condition) {
+  logic;
+  }
+
+Arrays have a special length property that allows you to see how many values, or elements, 
+  are in the array. You would access this property using syntax like myArray.length.
+
+
+---------------------------------------
+GradeBook App
+
+function getAverage(scores) {
+  let sum = 0;
+
+  for (const score of scores) {
+    sum += score;
+  }
+
+  return sum / scores.length;
+}
+
+function getGrade(score) {
+  if (score === 100) {
+    return "A++";
+  } else if (score >= 90) {
+    return "A";
+  } else if (score >= 80) {
+    return "B";
+  } else if (score >= 70) {
+    return "C";
+  } else if (score >= 60) {
+    return "D";
+  } else {
+    return "F";
+  }
+}
+
+function hasPassingGrade(score) {
+  return getGrade(score) !== "F";
+}
+
+function studentMsg(totalScores, studentScore) {
+  const classAverage = getAverage(totalScores);
+  const studentGrade = getGrade(studentScore);
+  const passed = hasPassingGrade(studentScore);
+  
+  if (passed) {
+    return "Class average: " + classAverage + ". Your grade: " + studentGrade + ". You passed the course.";
+  } else {
+    return "Class average: " + classAverage + ". Your grade: " + studentGrade + ". You failed the course.";
+console.log(studentMsg([92, 88, 12, 77, 57, 100, 67, 38, 97, 89], 37));
+  }
+}
+
+----------------------
+
 
 
