@@ -140,15 +140,83 @@ You can set browser behavior by adding meta elements in the head. Inside the hea
 ## CSS scratch
 
 Every HTML document should have a DOCTYPE declaration and html element. The DOCTYPE tells the browser which version of 
- HTML the document is in. And the html element represents the root element which contains all other elements.
+ HTML the document is in. And the html element represents the root element which contains all other elements. 
 
-How to add a background image:
-  body {
-  background-image: url(https://cdn.freecodecamp.org/curriculum/css-cafe/beans.jpg);
-  }
+div element:
+  Basic container in HTML.
+  Used to group elements together.
+  Example: <div></div>
 
-<article> elements commonly contain multiple elements that have related information. 
+background-color property:
+  Changes the background color of an element.
+  Syntax: background-color: value;
+  Can use named colors like red, blue, green.
+  Example: background-color: red;
 
+width & height:
+  Set the size of an element.
+  Syntax: width: value; and height: value;
+  Values can be px, %, em, etc.
+  Example: width: 50px; height: 100px;
+
+border property:
+  Adds a border around an element.
+  Syntax: border: width style color;
+  Example: border: 2px solid black;
+  Styles:
+    solid (straight line)
+    dotted (dots)
+    dashed (dashes)
+
+Hex colors:
+  Precise way of controlling colors.
+  Format: RRGGBB (or shorthand RGB).
+  Example: ff0000 is red, 00ff00 is green.
+  Shorthand: f00 = red.
+
+color property:
+  Changes the color of text.
+  Syntax: color: value;
+  Example: color: white;
+
+RGB colors:
+  Another way to define colors using red, green, and blue values.
+  Syntax: rgb(red, green, blue) where each value is 0–255.
+  Example: rgb(255, 0, 0) is red.
+
+RGBA colors:
+  Same as RGB but adds transparency.
+  Syntax: rgba(red, green, blue, alpha)
+  Alpha controls transparency:
+    0 = fully transparent.
+    1 = fully opaque.
+  Example: rgba(255, 0, 0, 0.5) is semi-transparent red.
+
+HSL colors:
+  Stands for Hue, Saturation, and Lightness.
+  Hue = the "color" (0° = red, 120° = green, 240° = blue).
+  Saturation = intensity of the color (0% = gray, 100% = full color).
+  Lightness = brightness (0% = black, 50% = normal, 100% = white).
+  Syntax: hsl(hue, saturation, lightness)
+  Example: hsl(0, 100%, 50%) is red.
+
+HSLA colors:
+  Same as HSL but with transparency.
+  Syntax: hsla(hue, saturation, lightness, alpha)
+  Example: hsla(0, 100%, 50%, 0.5) is semi-transparent red.
+
+margin:
+  Adds space outside an element.
+  Can use margin: auto; to center elements horizontally.
+  Example: margin: auto;
+
+padding:
+  Adds space inside an element, between the content and the border.
+  Syntax: padding: value;
+
+Notes on responsive design:
+  Use flexible units like %, em, or rem to make layouts adapt to screen sizes.
+  Avoid fixed sizes like px unless necessary.
 
 
 
