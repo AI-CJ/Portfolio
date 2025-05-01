@@ -1,8 +1,23 @@
-## HTML scratch
+*Thinking...*
+
+> I'll rewrite the complete notes for both sections, making sure to include all the details I've mentioned. I'll maintain the style and format of the original notes, with clear section headers, code examples, and concise explanations. I'll organize them in the requested order: first the HTML Cat Photo App section, then the CSS Cafe Menu section.
+
+
+## HTML Cat Photo App
+
+HTML document structure:
+  <!DOCTYPE html>
+  <html>
+    <head>
+    </head>
+    <body>
+    </body>
+  </html>
 
 Prioritize text with header elements:
 	<h1>Priority 1 text</h1>
 	<h2>Priority 2 text</h2>
+	<h3>Priority 3 text</h3>
 
 Paragraph of text uses <p> element:
 	<p>Paragraph of text</p>
@@ -23,203 +38,366 @@ The <main> element is used to represent the main content of the body of an
     </body>
   </html>
 
-NESTING is when you put the h1, h2, comment, and p elements inside the 
- main element.
+NESTING is when you put elements inside other elements:
+  <main>
+    <h1>CatPhotoApp</h1>
+  </main>
 
 A void element is an element where it uses an opening tag but
  no closing tag:
   <img>
-<img> is the image element, which has no closing tag
 
 HTML ATTRIBUTES are special words used inside the opening tag of an 
  element to control the element's behavior:
   <img src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/relaxing-cat.jpg">
+
+Add an ID attribute for uniquely identifying elements:
+  <h2 id="cat-photos">Cat Photos</h2>
+  /* This can be targeted with #cat-photos in CSS */
+
 All <img> elements should have an alt attribute. The alt attribute's text is used for 
  screen readers to improve accessibility and is displayed if the image fails to load:
   <img src="cat.jpg" alt="A cat">
 
 Link to another page with the anchor <a> element:
   <a href="https://www.freecodecamp.org">click here to go to freeCodeCamp.org</a>
+
 You can use the target attribute on the anchor <a> element to open links in a new tab:
   <a href="https://www.freecodecamp.org" target="_blank">freeCodeCamp</a>
+
 You can turn an image or other types of content into a link:
   <a href="example-link">
-  <img src="image-link.jpg" alt="A photo of a cat.">
+    <img src="image-link.jpg" alt="A photo of a cat.">
   </a>
 
-The s<ection> element is used to define sections in a document, such as chapters, headers, 
- footers, or any other sections of the document:
+Use DIV elements for general grouping of content:
+  <div>
+    <p>This content is grouped together.</p>
+  </div>
+
+Create a SECTION element to group related content:
   <section>
-    <h2>Section Title</h2>
-    <p>Section content...</p>
+    <h2>Cat Photos</h2>
+    <!-- TODO: Add link to cat photos -->
+    <p>See more <a target="_blank" href="https://freecatphotoapp.com">cat photos</a> in our gallery.</p>
+    <a href="https://freecatphotoapp.com"><img src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/relaxing-cat.jpg" alt="A cute orange cat lying on its back."></a>
   </section>
 
-To create an unordered list of items, you can use the <ul> element.
-The <li> element is used to create a list item in an ordered or unordered list.
+Create lists with <ul> (unordered) and <ol> (ordered) elements:
+  <h2>Things cats love:</h2>
   <ul>
-    <li>milk</li>
-    <li>cheese</li>
+    <li>cat nip</li>
+    <li>laser pointers</li>
+    <li>lasagna</li>
   </ul>
-The code for an ordered list (ol) is similar to an unordered list, but list items in 
- an ordered list are numbered when displayed.
 
-The <figure> element represents self-contained content and will allow you to associate an 
- image with a caption.
-A figure caption (figcaption) element is used to add a caption to describe the image contained 
- within the figure element.
+  <h2>Top 3 things cats hate:</h2>
+  <ol>
+    <li>flea treatment</li>
+    <li>thunder</li>
+    <li>other cats</li>
+  </ol>
+
+Create a FIGURE element with a caption for images:
   <figure>
-    <img src="image.jpg" alt="A description of the image">
-    <figcaption>A cute cat</figcaption>
+    <img src="lasagna.jpg" alt="A slice of lasagna on a plate.">
+    <figcaption>Cats <em>love</em> lasagna.</figcaption>
   </figure>
 
-To place emphasis (italicize) on a specific word or phrase, you can use the <em> element. 
-The strong element is used to indicate that some text is of strong importance or urgent (bold).
+Emphasize text with <em> (italic emphasis) and <strong> (strong emphasis):
+  <p>Cats <em>love</em> lasagna.</p>
+  <p>Cats <strong>hate</strong> water.</p>
 
-The <form> element is used to get information from a user like their name, email, and other details.
-
-The action attribute indicates where form data should be sent.
+Create a FORM element for user input:
   <form action="https://freecatphotoapp.com/submit-cat-photo">
+    <input type="text" name="catphotourl" placeholder="cat photo URL" required>
+    <button type="submit">Submit</button>
   </form>
-The input element allows you several ways to collect data from a web form. Like img elements, input 
- elements are a void element and do not need closing tags.
 
-Placeholder text is used to give people a hint about what kind of information to enter into an input.
-  <input type="text" name="catphotourl" placeholder="cat photo URL">
+More form input validation:
+  <input type="text" required placeholder="required field">
+  <input type="email" placeholder="Enter your email">
 
-To prevent a user from submitting your form when required information is missing, you need to add the 
- <required> attribute to an input element.
+Create RADIO BUTTONS for exclusive selection:
+  <form>
+    <label><input type="radio" name="indoor-outdoor" checked> Indoor</label>
+    <label><input type="radio" name="indoor-outdoor"> Outdoor</label>
+  </form>
 
-The <button> element is used to create a clickable button.
+Create CHECKBOXES for multiple selections:
+  <form>
+    <label><input type="checkbox" name="personality" checked> Loving</label>
+    <label><input type="checkbox" name="personality"> Lazy</label>
+    <label><input type="checkbox" name="personality"> Energetic</label>
+  </form>
 
-Even though you added your button below the text input, they appear next to each other on the page. 
- That's because both input and button elements are inline elements, which don't appear on new lines.
+Use the VALUE attribute to specify data sent to server:
+  <input type="radio" name="indoor-outdoor" id="indoor" value="indoor" checked>
+  <input type="checkbox" name="personality" value="loving" checked>
 
-You can use radio buttons for questions where you want only one answer out of multiple options. To 
- make it so selecting one radio button automatically deselects the other, both buttons must have a name 
- attribute with the same value.
+Add a FIELDSET and LEGEND to group related form inputs:
+  <fieldset>
+    <legend>Is your cat an indoor or outdoor cat?</legend>
+    <label><input type="radio" name="indoor-outdoor" value="indoor" checked> Indoor</label>
+    <label><input type="radio" name="indoor-outdoor" value="outdoor"> Outdoor</label>
+  </fieldset>
 
-label elements are used to help associate the text for an input element with the input element itself 
- (especially for assistive technologies like screen readers).
+Create a FOOTER element for page footer content:
+  <footer>
+    <p>No Copyright - <a href="https://www.freecodecamp.org">freeCodeCamp.org</a></p>
+  </footer>
 
-The id attribute is used to identify specific HTML elements. Each id attribute's value must be unique 
- from all other id values for the entire page.
+## CSS Cafe Menu
 
-The fieldset element is used to group related inputs and labels together in a web form. fieldset elements 
- are block-level elements, meaning that they appear on a new line.
+The <style> element is used to define CSS within an HTML document:
+  <head>
+    <style>
+      h1 {
+        text-align: center;
+      }
+    </style>
+  </head>
 
-The legend element acts as a caption for the content in the fieldset element. It gives users context about 
- what they should enter into that part of the form.
+Link an external CSS file to your HTML document:
+  <head>
+    <link href="styles.css" rel="stylesheet">
+  </head>
 
-Forms commonly use checkboxes for questions that may have more than one answer. The input element with a type 
- attribute set to checkbox creates a checkbox.
+CSS SELECTORS target HTML elements to apply styles:
+  h1 { 
+    text-align: center; 
+  }
+  /* This targets all h1 elements */
 
-Like radio buttons, form data for selected checkboxes are name / value attribute pairs. While the value attribute 
- is optional, it's best practice to include it with any checkboxes or radio buttons on the page.
+Target elements with CLASS selectors by using a period:
+  .menu {
+    /* styles for elements with class="menu" */
+  }
 
-In order to make a checkbox checked or radio button selected by default, you need to add the checked attribute 
- to it.
+Target elements with ID selectors by using a hash symbol:
+  #menu-title {
+    /* styles for element with id="menu-title" */
+  }
 
-The footer element is used to define a footer for a document or section. A footer typically contains information 
- about the author of the document, copyright data, links to terms of use, contact information, and more.
+Different ways to specify colors:
+  p {
+    color: #8B4513; /* Hex color */
+    color: rgb(139, 69, 19); /* RGB color */
+    color: rgba(139, 69, 19, 0.8); /* RGBA with transparency */
+  }
 
-The head element is used to contain metadata about the document, such as its title, links to stylesheets, and 
- scripts. Metadata is information about the page that isn't displayed directly on the page.
+Use different CSS units:
+  h1 {
+    font-size: 40px; /* Pixels */
+    line-height: 1.5; /* Unitless multiplier */
+    margin: 2em; /* Relative to font size */
+    width: 50%; /* Percentage of parent */
+  }
 
-The title element determines what browsers show in the title bar or tab for the page.
+Use nested selectors to target specific elements:
+  .menu p {
+    /* Only targets paragraphs inside elements with class="menu" */
+    color: black;
+  }
 
-Add the lang attribute with the value en to the opening html tag to specify that the language of the page is English. 
+## Page Setup
 
-All pages should begin with <!DOCTYPE html>. This special string is known as a declaration and ensures the browser 
- tries to meet industry-wide specifications. <!DOCTYPE html> tells browsers that the document is an HTML5 document 
- which is the latest version of HTML.
+Define a meta tag for proper character encoding:
+  <meta charset="utf-8">
 
-You can set browser behavior by adding meta elements in the head. Inside the head element, nest a meta element with 
- an attribute named charset. Set to the value to utf-8 which tells the browser how to encode characters for the page.
+Add title element in the head:
+  <head>
+    <title>Cafe Menu</title>
+  </head>
 
+Set a background image for the body:
+  body {
+    background-image: url(https://cdn.freecodecamp.org/curriculum/css-cafe/beans.jpg);
+  }
 
-## CSS scratch
+Change font family for the entire page:
+  body {
+    font-family: sans-serif;
+  }
 
-Every HTML document should have a DOCTYPE declaration and html element. The DOCTYPE tells the browser which version of 
- HTML the document is in. And the html element represents the root element which contains all other elements. 
+## Creating the Menu Container
 
-div element:
-  Basic container in HTML.
-  Used to group elements together.
-  Example: <div></div>
+Center an element with margin property:
+  .menu {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  /* Or use shorthand: margin: 0 auto; */
 
-background-color property:
-  Changes the background color of an element.
-  Syntax: background-color: value;
-  Can use named colors like red, blue, green.
-  Example: background-color: red;
+Limit maximum width to prevent stretching on large screens:
+  .menu {
+    max-width: 500px;
+  }
 
-width & height:
-  Set the size of an element.
-  Syntax: width: value; and height: value;
-  Values can be px, %, em, etc.
-  Example: width: 50px; height: 100px;
+Set background color:
+  .menu {
+    background-color: burlywood;
+  }
 
-border property:
-  Adds a border around an element.
-  Syntax: border: width style color;
-  Example: border: 2px solid black;
-  Styles:
-    solid (straight line)
-    dotted (dots)
-    dashed (dashes)
+Add padding inside the container:
+  .menu {
+    padding: 20px;
+  }
 
-Hex colors:
-  Precise way of controlling colors.
-  Format: RRGGBB (or shorthand RGB).
-  Example: ff0000 is red, 00ff00 is green.
-  Shorthand: f00 = red.
+Create rounded corners:
+  .menu {
+    border-radius: 25px;
+  }
 
-color property:
-  Changes the color of text.
-  Syntax: color: value;
-  Example: color: white;
+## Text Styling
 
-RGB colors:
-  Another way to define colors using red, green, and blue values.
-  Syntax: rgb(red, green, blue) where each value is 0–255.
-  Example: rgb(255, 0, 0) is red.
+Set text alignment:
+  h1, h2, p {
+    text-align: center;
+  }
 
-RGBA colors:
-  Same as RGB but adds transparency.
-  Syntax: rgba(red, green, blue, alpha)
-  Alpha controls transparency:
-    0 = fully transparent.
-    1 = fully opaque.
-  Example: rgba(255, 0, 0, 0.5) is semi-transparent red.
+Change font family for specific elements:
+  h1, h2 {
+    font-family: Impact, serif;
+  }
 
-HSL colors:
-  Stands for Hue, Saturation, and Lightness.
-  Hue = the "color" (0° = red, 120° = green, 240° = blue).
-  Saturation = intensity of the color (0% = gray, 100% = full color).
-  Lightness = brightness (0% = black, 50% = normal, 100% = white).
-  Syntax: hsl(hue, saturation, lightness)
-  Example: hsl(0, 100%, 50%) is red.
+Set specific font sizes:
+  h1 {
+    font-size: 40px;
+  }
+  
+  h2 {
+    font-size: 30px;
+  }
 
-HSLA colors:
-  Same as HSL but with transparency.
-  Syntax: hsla(hue, saturation, lightness, alpha)
-  Example: hsla(0, 100%, 50%, 0.5) is semi-transparent red.
+Add italic style to text:
+  .established {
+    font-style: italic;
+  }
 
-margin:
-  Adds space outside an element.
-  Can use margin: auto; to center elements horizontally.
-  Example: margin: auto;
+## Menu Items Layout
 
-padding:
-  Adds space inside an element, between the content and the border.
-  Syntax: padding: value;
+Create a class for menu items:
+  <article class="item">
+    <p class="flavor">French Vanilla</p>
+    <p class="price">3.00</p>
+  </article>
 
-Notes on responsive design:
-  Use flexible units like %, em, or rem to make layouts adapt to screen sizes.
-  Avoid fixed sizes like px unless necessary.
+Display elements side by side:
+  .item p {
+    display: inline-block;
+  }
 
+Control width of inline-block elements:
+  .flavor {
+    width: 75%;
+    text-align: left;
+  }
+  
+  .price {
+    width: 25%;
+    text-align: right;
+  }
 
+Pattern for properly organizing the complete cafe menu:
+  <main>
+    <div class="menu">
+      <h1>CAMPER CAFE</h1>
+      <p class="established">Est. 2020</p>
+      <hr>
+      <section>
+        <h2>Coffee</h2>
+        <article class="item">
+          <p class="flavor">French Vanilla</p>
+          <p class="price">3.00</p>
+        </article>
+        <article class="item">
+          <p class="flavor">Caramel Macchiato</p>
+          <p class="price">3.75</p>
+        </article>
+        <!-- More coffee items -->
+      </section>
+      <section>
+        <h2>Desserts</h2>
+        <article class="item">
+          <p class="dessert">Donut</p>
+          <p class="price">1.50</p>
+        </article>
+        <!-- More dessert items -->
+      </section>
+      <hr>
+      <footer>
+        <p><a href="https://www.freecodecamp.org">Visit our website</a></p>
+        <p class="address">123 Free Code Camp Drive</p>
+      </footer>
+    </div>
+  </main>
 
+## Dividers and Spacing
 
+Add a horizontal line with the <hr> element:
+  <hr>
 
+Style horizontal lines:
+  hr {
+    height: 2px;
+    background-color: brown;
+    border-color: brown;
+  }
 
+Create space between sections:
+  section {
+    margin-bottom: 20px;
+  }
+
+## Links and Footer
+
+Style links with different states:
+  a {
+    color: black;
+  }
+  
+  a:visited {
+    color: black;
+  }
+  
+  a:hover {
+    color: brown;
+  }
+  
+  a:active {
+    color: brown;
+  }
+
+Create a footer with contact information:
+  <footer>
+    <p>
+      <a href="https://www.freecodecamp.org">Visit our website</a>
+    </p>
+    <p class="address">123 Free Code Camp Drive</p>
+  </footer>
+
+Style the footer:
+  footer {
+    font-size: 14px;
+  }
+  
+  .address {
+    margin-bottom: 5px;
+  }
+
+## CSS Box Model
+
+The BOX MODEL consists of margin, border, padding, and content:
+  margin → border → padding → content
+  
+  div {
+    margin: 10px;   /* Space outside the element */
+    border: 1px solid black;  /* Border around the element */
+    padding: 15px;  /* Space inside the element */
+  }
+
+Shorthand for setting margins and padding:
+  margin: 5px 10px 5px 10px;  /* top right bottom left */
+  margin: 5px 10px;  /* top/bottom left/right */
